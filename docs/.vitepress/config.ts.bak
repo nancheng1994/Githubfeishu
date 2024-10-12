@@ -1,0 +1,52 @@
+import { defineConfig } from 'vitepress'
+// <--  配置文件，支持js、ts、mjs、mts
+// https://vitepress.dev/reference/site-config
+
+// import { nav } from './configs'
+import timeline from "vitepress-markdown-timeline"; 
+export default defineConfig({
+  title: "My Awesome Project",
+  description: "A VitePress Site",
+  lastUpdated: true,
+  vite: {
+          css: {
+              preprocessorOptions: {
+                  scss: {
+                      api: 'modern-compiler', // or 'modern'
+                  },
+              },
+          },
+      },
+  themeConfig: {
+    // https://vitepress.dev/reference/default-theme-config
+     //导航栏
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Examples', link: '/markdown-examples' }
+    ],
+    sidebar: [
+      {
+        text: 'Examples',
+        items: [
+          { text: 'Markdown Examples', link: '/markdown-examples' },
+          { text: 'Runtime API Examples', link: '/api-examples' }
+        ]
+      }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+    ]
+  },
+   //markdown配置
+  markdown: {
+  // 组件插入h1标题下
+  config: (md) => {
+    md.renderer.rules.heading_close = (tokens, idx, options, env, slf) => {
+        let htmlResult = slf.renderToken(tokens, idx, options);
+        if (tokens[idx].tag === 'h1') htmlResult += `<ArticleMetadata />`; 
+        return htmlResult;
+    };
+    md.use(timeline);
+  }
+  },
+});
