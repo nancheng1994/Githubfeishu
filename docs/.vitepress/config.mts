@@ -8,8 +8,8 @@ import { groupIconMdPlugin, groupIconVitePlugin, localIconLoader } from 'vitepre
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: "VitePress",
-  description: "我的vitpress文档教程",
+  title: "NVH百宝箱",
+  description: "我的NVH文档教程",
 
   // #region fav
   head: [
@@ -103,7 +103,7 @@ export default defineConfig({
   //主题配置
   themeConfig: {
     //左上角logo
-    //logo: '/logo.png',
+    logo: '/logo.png',
     //logo: 'https://vitejs.cn/vite3-cn/logo-with-shadow.png', //远程引用
     //siteTitle: false, //标题隐藏
 
@@ -112,7 +112,7 @@ export default defineConfig({
 
     //编辑本页
     editLink: {
-      pattern: 'https://github.com/Yiov/vitepress-doc/edit/main/docs/:path', // 改成自己的仓库
+      pattern: 'https://github.com/nancheng1994/Githubfeishu.github.io/edit/main/docs/:path', // 改成自己的仓库
       text: '在GitHub编辑本页'
     },
 
@@ -250,7 +250,7 @@ export default defineConfig({
 
     //社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Yiov/vitepress-doc' },
+      { icon: 'github', link: 'https://github.com/nancheng1994/Githubfeishu.github.io' },
       { icon: 'twitter', link: 'https://twitter.com/' },
       { icon: 'discord', link: 'https://chat.vitejs.dev/' },
       {
