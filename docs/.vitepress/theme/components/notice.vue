@@ -24,7 +24,7 @@ setTimeout(function () { visible.value = false }, 5000);
                         target="_blank">vitepress.yiov.top</a>
                 </strong>
             </p>
-            <p>QQ 频道：******(无效二维码)</p>
+            <p>QQ 频道：pd88594164</p>
             <img class="notice-img" src="/qrcode.png">
         </div>
 

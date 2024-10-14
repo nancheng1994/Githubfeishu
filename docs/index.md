@@ -3,10 +3,10 @@ layout: home
 
 hero:
   name: NVH百宝箱
-  text: "NVH百宝箱"
+  text: "打造NVH工程师专业网站！"
   tagline: 持续学习，持续进步！
   image:
-    src: /logo.png
+    src: /back.svg
     alt: NVH百宝箱
   actions:
     - theme: brand
@@ -24,8 +24,8 @@ features:
     title: 专注于您的内容
     details: 只需使用 Markdown 即可轻松创建精美的文档网站
   - icon: 
-      dark: /back.svg
-      light: /back.svg
+      dark: /vitepress.png
+      light: /vitepress-light.png
     title: 享受Vite DX
     details: 即时服务器启动，闪电般快速的热更新，并利用 Vite 生态插件。
     link: https://vitejs.cn/
