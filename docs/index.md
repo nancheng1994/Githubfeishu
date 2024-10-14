@@ -2,19 +2,19 @@
 layout: home
 
 hero:
-  name: VitePress
-  text: "快速上手中文教程"
-  tagline: 如果你也想搭建它，那跟我一起做吧
+  name: NVH百宝箱
+  text: "NVH百宝箱"
+  tagline: 持续学习，持续进步！
   image:
     src: /logo.png
-    alt: VitePress
+    alt: NVH百宝箱
   actions:
     - theme: brand
       text: 开始
       link: /getting-started
     - theme: alt
       text: GitHub
-      link: https://github.com/Yiov/vitepress-doc
+      link: https://github.com/nancheng1994/Githubfeishu.github.io
     - theme: sponsor
       text: 搭建导航
       link: /nav/
@@ -24,8 +24,8 @@ features:
     title: 专注于您的内容
     details: 只需使用 Markdown 即可轻松创建精美的文档网站
   - icon: 
-      dark: /vitepress.png
-      light: /vitepress-light.png
+      dark: /back.svg
+      light: /back.svg
     title: 享受Vite DX
     details: 即时服务器启动，闪电般快速的热更新，并利用 Vite 生态插件。
     link: https://vitejs.cn/
